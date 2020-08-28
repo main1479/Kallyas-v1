@@ -1,0 +1,57 @@
+.client{
+    
+
+
+    &__grid{
+        padding: 8rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+        grid-gap: 4rem;
+    }
+
+    &__content{
+
+        .p__text{
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-right: 5rem;
+        }
+
+        .btn__black{
+            border-color:#000;
+            background:none;
+            color:#000;
+
+            &:hover{
+                background: #000;
+                color:#fff;
+            }
+        }
+
+    }
+
+    &__video{
+
+        img{
+            display: block;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+.craft{
+    margin-bottom: 8rem;
+    .container{
+        background-color: $color-bg-light;
+        background-image: url(../img/accounting.png);
+        background-repeat: no-repeat;
+        background-position: 0 -25px;
+        background-size: cover;
+    }
+
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+        padding: 10rem 0;
+        grid-gap: 5rem;
+    }
+
+    &__content{
+        p{
+            font-size: 1.4rem;
+        }
+
+        &-items{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 5rem;
+        }
+
+        &-item{
+
+            img{
+                width:4rem;
+            }
+        }
+    }
+
+}

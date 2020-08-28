@@ -1,0 +1,128 @@
+  .service__header{
+      background:linear-gradient(rgba($color-primary,.5),rgba($color-primary,.5)), url(../img/header-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .main__nav{
+          li{
+              a{
+
+                &::after{
+                    background: #fff !important;
+                }
+              }
+          }
+      }
+  }
+
+  .light-bg{
+      background: $color-bg-light;
+  }
+
+  .left-grid{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+        align-items: center;
+        padding: 8rem 0;
+        .img-box{
+            grid-column: 1/3;
+            text-align: center;
+            @media only screen and (max-width:$px575){
+                grid-column: 1/-1;
+                grid-row: 1/2;
+                img{
+                    width: 50% !important;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+        .content-box{
+            grid-column: 4/-1;
+            @media only screen and (max-width:$px575){
+                grid-column: 1/-1;
+                grid-row: 2/3;
+
+            }
+
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.3rem;
+                font-weight:400;
+            }
+        }
+  }
+
+  .right-grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    align-items: center;
+    padding: 8rem 0;
+    .img-box{
+        grid-column: 11/-1;
+        text-align: center;
+        @media only screen and (max-width:$px575){
+            grid-column: 1/-1;
+            grid-row: 1/2;
+            img{
+                width: 50% !important;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .content-box{
+        grid-column:1/10;
+        grid-row: 1/2;
+        @media only screen and (max-width:$px575){
+            grid-column: 1/-1;
+            grid-row: 2/3;
+
+        }
+
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.3rem;
+            font-weight:400;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

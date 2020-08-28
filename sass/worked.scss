@@ -1,0 +1,53 @@
+ .worked{
+
+    .container{
+        background: $color-bg-dark;
+    }
+
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        padding: 8rem 0;
+        grid-gap: 5rem;
+        @media only screen and (max-width:$px480){
+            br{
+                display: none !important;
+            }
+        }
+    }
+
+    &__content{
+
+        text-align: right;
+        color:#fff;
+        @media only screen and (max-width:$px480){
+            text-align: left;
+        }
+        // h2{
+        //     text-align: right;
+        //     color:#fff;
+        // }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    &__logos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-items: center;
+        grid-gap: 5rem;
+        
+    }
+    &__logo{
+
+        // align-self: start;
+        // justify-content: center;
+
+        img{
+            // max-height:100%;
+            width: 60%;
+        }
+    }
+ }

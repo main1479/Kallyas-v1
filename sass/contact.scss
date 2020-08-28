@@ -1,0 +1,97 @@
+.contact{
+    margin-bottom:8rem;
+
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        grid-gap: 5rem;
+    }
+
+    &__content{
+         text-align: right;
+         @media only screen and (max-width:$px768){
+             text-align: left;
+            br{
+                display: none !important;
+            }
+        }
+         p{
+             margin-left: 5rem;
+             @media only screen and (max-width:$px768){
+                margin-left: 0;
+            }
+         }
+    }
+
+    &__input-box{
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+            grid-gap: 1rem;
+        }
+
+        textarea{
+            height: 20rem;
+        }
+
+        select{
+            -webkit-appearance: none;
+            -moz-appearance: none; 
+            display: block;
+            width: 100%;
+            padding: 1.5rem 2rem;
+            border:1.5px solid #000; 
+
+        }
+
+        &3{
+            position: relative;
+            &::after{
+                content:'\27A4';
+                // width: 1rem;   
+                // height: 1rem;
+                display: block; 
+                // background: #000;
+                position: absolute;
+                top: calc(50% - 1.5rem);
+                right: 2rem;
+                transform:rotate(90deg);
+                transition:all .3s;
+            }
+
+            &.active{
+                &::after{
+                    transform:rotate(-90deg);
+                }
+            }
+        }
+    }
+
+    &__input{
+        width: 100%;
+        padding: 1.5rem 2rem;
+        border: 1.5px solid #1f1f1f;
+        font-family: inherit;
+        &::placeholder{
+            color:#000;
+        }
+
+    }
+
+    .btn{
+        width: 100%;
+        cursor: pointer;
+        padding: 1.2rem;
+        font-weight: bold;
+        font-family: inherit;
+        letter-spacing:1px;
+
+        &:hover{
+            color:$color-primary;
+            
+        }
+    }
+}

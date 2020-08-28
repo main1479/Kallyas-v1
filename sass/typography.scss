@@ -1,0 +1,96 @@
+.head-bold{
+    font-family: $font-heading;
+    line-height: 1.2;
+}
+.heading-1{
+    font-weight: 700;
+    color:#fff;
+    text-transform: capitalize;
+    font-size:6rem;
+    @media only screen and (max-width:$px1200){
+        font-size: 5rem;
+    }
+    @media only screen and (max-width:$px1024){
+        font-size:4.5rem;
+    }
+}
+.heading-2{
+    font-size: 5rem;
+    @media only screen and (max-width:$px1200){
+        font-size: 4.5rem;
+    }
+    @media only screen and (max-width:$px1024){
+        font-size:4rem;
+    }
+    line-height: 1.2;
+    &--small{
+        font-size: 3.5rem;
+    }
+}
+.heading-3{
+    font-size: 3rem;
+    color:#1f1f1f;
+}
+.heading-4{ 
+    font-size: 2rem;
+    color:#fff;
+    &-dark{
+        color:#1f1f1f;
+    }
+}
+
+.heading__underline{
+    position: relative;
+
+    &::after{
+        content:'';
+        width: 4rem;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin-top: 2rem;
+    }
+}
+
+.tc-primary{
+    color:$color-primary;
+}
+
+
+
+
+
+
+
+
+.p__text{
+    font-weight: 300;
+    color:#fff;
+    &-dark{
+        color:$color-secondary;
+    }
+    &-black{
+        color:#000;
+        // font-weight:400;
+    }
+}
+
+.white{
+    &,
+    &:link,
+    &:visited{
+        color:#fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
